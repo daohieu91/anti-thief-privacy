@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Anti-Theft Alarm</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 28px 20px 64px;
+    color: #111726; background: #ffffff; line-height: 1.6; font-size: 17px;
+  }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  h3 { font-size: 17px; margin: 20px 0 4px; }
+  .muted { color: #6b7280; }
+  .tldr { background: #eef2fa; border: 1px solid #e3e8f2; border-radius: 14px; padding: 16px 18px; margin: 20px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  th, td { border: 1px solid #e3e8f2; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f3f5fb; }
+  a { color: #3b82f6; }
+  code { background: #f3f5fb; padding: 1px 5px; border-radius: 5px; font-size: 14px; }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Anti-Theft Alarm</h1>
+<p class="muted">Last updated: June 11, 2026</p>
+
+<div class="tldr">
+  <strong>The short version.</strong>
+  Anti-Theft Alarm protects <em>your own</em> phone. Everything it captures — your PIN, settings,
+  and intruder selfies — stays on your device by default and is deleted when you uninstall the app.
+  The microphone is only used, on-device, to hear a clap or whistle when <em>you</em> start
+  “Find my phone”; audio is never recorded or sent anywhere.
+  Two optional features send data off your device: <strong>ads</strong> (Free version, via Google
+  AdMob) and the Pro <strong>email alert</strong>, which — only if you turn it on and enter your own
+  email — sends an intruder selfie to <em>your</em> email address. We never track other people.
+  Questions: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a>.
+</div>
+
+<p class="muted">
+  <strong>Note for the developer hosting this page:</strong> replace every <code>[BRACKETED]</code>
+  placeholder, and delete any section describing a feature your published build does <em>not</em>
+  ship (e.g. remove the “Ads” section if you ship without AdMob, or the “Email alert” section if the
+  relay is not configured). A privacy policy must describe the app <em>as released</em>. Remove this
+  note before publishing.
+</p>
+
+<h2>1. Who we are</h2>
+<ul>
+  <li>App: <strong>Anti-Theft Alarm</strong> (package <code>[APPLICATION_ID]</code>).</li>
+  <li>Developer: <strong>[DEVELOPER_NAME]</strong>, based in Vietnam.</li>
+  <li>Contact: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a>.</li>
+  <li>The app has no account and no sign-up.</li>
+</ul>
+
+<h2>2. What the app does</h2>
+<p>
+  Anti-Theft Alarm sounds a loud alarm when your phone is moved, taken from your pocket, unplugged,
+  or its headphones/Wi-Fi are changed while protection is on; it can capture a selfie of whoever
+  enters the wrong PIN; and it can ring on a clap or whistle to help you find a misplaced phone.
+  It is designed to protect the owner’s own device.
+</p>
+
+<h2>3. Data we handle</h2>
+
+<h3>3.1 On your device only (never sent to us)</h3>
+<ul>
+  <li>Your disarm <strong>PIN</strong>, stored only as a salted hash — never in plain text, never transmitted.</li>
+  <li>App <strong>settings</strong> (sensitivity, volume, enabled detectors, theme, language, chosen alarm sound).</li>
+  <li><strong>Intruder selfies</strong> and the intrusion history (time + trigger), stored in the app’s private storage.</li>
+</ul>
+<p>All of the above is removed when you uninstall the app.</p>
+
+<h3>3.2 Microphone (clap / whistle)</h3>
+<p>
+  When <em>you</em> start “Find my phone”, the app listens through the microphone <strong>on the
+  device only</strong> to detect a clap or whistle. The audio is analysed in memory and immediately
+  discarded. <strong>No audio is recorded, stored, or transmitted.</strong> Listening stops when you
+  stop it or after a short timeout.
+</p>
+
+<h3>3.3 Email alert (Pro, optional, off by default)</h3>
+<p>
+  If you upgrade to Pro, turn on the email alert, and enter your own email address, then when an
+  incorrect PIN is entered the app sends the intruder selfie and the time to a relay server we
+  operate, which forwards an email to <strong>the email address you entered</strong> using an email
+  provider (<strong>[EMAIL_PROVIDER, e.g. Resend]</strong>). This data is sent <strong>only to your
+  own address</strong> — never to us for any other purpose, never to third parties, and it includes
+  <strong>no location and no audio</strong>. This feature is off unless you enable it.
+</p>
+
+<h3>3.4 Ads (Free version)</h3>
+<p>
+  The free version shows banner ads via <strong>Google AdMob</strong>. AdMob may collect and use a
+  device <strong>advertising identifier (AD_ID)</strong> and related data to serve and measure ads,
+  as described in Google’s privacy policy. Upgrading to Pro removes ads. See Google’s policy linked
+  in section 6.
+</p>
+
+<h3>3.5 Purchases</h3>
+<p>
+  Pro is a one-time purchase processed by <strong>Google Play Billing</strong>. Google handles the
+  payment and tells the app whether you own Pro. We do not receive your payment details.
+</p>
+
+<h3>3.6 What we do NOT collect</h3>
+<ul>
+  <li>No user accounts and no personal profile.</li>
+  <li>No location data.</li>
+  <li>No contacts, SMS, or call logs.</li>
+  <li>No stored or transmitted audio recordings.</li>
+  <li>No tracking of any person other than protecting your own device.</li>
+</ul>
+
+<h2>4. Permissions and why</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Camera</td><td>Take the intruder selfie when a wrong PIN is entered (only if you enable it).</td></tr>
+  <tr><td>Microphone (record audio)</td><td>Detect a clap/whistle for “Find my phone” — on-device, not recorded.</td></tr>
+  <tr><td>Notifications</td><td>Show the ongoing “protecting” notification and the alarm notification.</td></tr>
+  <tr><td>Foreground service (+ microphone / special use)</td><td>Keep protection or the clap/whistle listener running while active.</td></tr>
+  <tr><td>Vibrate</td><td>Vibrate during the alarm.</td></tr>
+  <tr><td>Biometric / fingerprint</td><td>Let you disarm the alarm with biometrics (only if you enable it).</td></tr>
+  <tr><td>Internet, network state (auto-added by Ads/Billing)</td><td>Serve ads, talk to Google Play Billing, and (Pro) send the email alert.</td></tr>
+  <tr><td>Advertising ID (AD_ID)</td><td>Used by Google AdMob in the free version (see section 3.4).</td></tr>
+</table>
+
+<h2>5. Where your data goes</h2>
+<ul>
+  <li><strong>On your device:</strong> PIN hash, settings, selfies, history (sections 3.1).</li>
+  <li><strong>To Google:</strong> ads (AdMob) and purchase state (Play Billing).</li>
+  <li><strong>To our relay + email provider, only for the Pro email alert you enabled:</strong> the selfie, the time, and the email address you entered — forwarded to that same address.</li>
+</ul>
+
+<h2>6. Third-party services</h2>
+<ul>
+  <li>Google AdMob &amp; Google Play services — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Google Play Billing — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Email delivery provider <strong>[EMAIL_PROVIDER]</strong> (Pro email alert only) — see that provider’s privacy policy.</li>
+</ul>
+
+<h2>7. Your rights</h2>
+<h3>7.1 Everyone</h3>
+<ul>
+  <li><strong>Delete your data:</strong> uninstall the app — all on-device data is wiped.</li>
+  <li><strong>Opt out of ads data:</strong> upgrade to Pro (removes ads), or reset/limit your Advertising ID in Android settings.</li>
+  <li><strong>Turn off the email alert</strong> anytime in the app.</li>
+  <li>Contact us anytime at <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a>.</li>
+</ul>
+<h3>7.2 Vietnam (Decree 13/2023/ND-CP on Personal Data Protection)</h3>
+<p>
+  If you are in Vietnam, you have the rights to be informed, to access, to correct, to withdraw
+  consent, to delete, and to object to the processing of your personal data, and to lodge complaints
+  with the competent authority. Contact us to exercise these rights.
+</p>
+<h3>7.3 EU / EEA (GDPR)</h3>
+<p>
+  You have the rights of access, rectification, erasure, restriction, objection, and portability.
+  Legal bases: performing the purchase contract (Pro), and your consent (ads, email alert). You may
+  complain to your local Data Protection Authority.
+</p>
+<h3>7.4 California (CCPA/CPRA)</h3>
+<p>
+  We do <strong>not</strong> sell or “share” your personal information. You have the rights to know,
+  to delete, and to non-discrimination. The advertising ID used by AdMob may be treated as personal
+  information; you can limit it in Android settings or remove ads by upgrading to Pro.
+</p>
+
+<h2>8. Children’s privacy</h2>
+<p>
+  The app is not directed at children under 13 and we do not knowingly collect children’s personal
+  information. If you believe a child has provided personal information, contact us.
+</p>
+
+<h2>9. Data retention &amp; security</h2>
+<p>
+  On-device data lives only on your device until you delete it or uninstall. The PIN is stored as a
+  salted hash. Data sent for the Pro email alert is transmitted over HTTPS and is not retained by our
+  relay beyond delivering the email.
+</p>
+
+<h2>10. Changes to this policy</h2>
+<p>
+  We may update this policy. Material changes will bump the “Last updated” date above and, where
+  appropriate, be noted in the app. Continued use after the effective date constitutes acceptance.
+</p>
+
+<h2>11. Governing law</h2>
+<p>
+  Vietnamese law applies as the primary jurisdiction. Where mandatorily applicable, the GDPR (EU)
+  and CCPA/CPRA (California) rights in section 7 are respected.
+</p>
+
+<h2>12. Contact</h2>
+<p>
+  <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a> — best-effort response within 7 business days.
+</p>
+
+</body>
+</html>
