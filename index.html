@@ -27,7 +27,7 @@
 <body>
 
 <h1>Privacy Policy — ThiefSnap</h1>
-<p class="muted">Last updated: June 11, 2026</p>
+<p class="muted">Last updated: June 12, 2026</p>
 
 <div class="tldr">
   <strong>The short version.</strong>
@@ -35,9 +35,9 @@
   and intruder selfies — stays on your device by default and is deleted when you uninstall the app.
   The microphone is only used, on-device, to hear a clap or whistle when <em>you</em> start
   “Find my phone”; audio is never recorded or sent anywhere.
-  Two optional features send data off your device: <strong>ads</strong> (Free version, via Google
-  AdMob) and the Pro <strong>email alert</strong>, which — only if you turn it on and enter your own
-  email — sends an intruder selfie to <em>your</em> email address. We never track other people.
+  The only data that ever leaves your device is for <strong>ads</strong> (Free version, via Google
+  AdMob); upgrading to Pro removes that too. Intruder selfies stay on your phone and are
+  <strong>never uploaded</strong>. We never track other people.
   Questions: <a href="mailto:hieu.dtvt10@gmail.com">hieu.dtvt10@gmail.com</a>.
 </div>
 
@@ -53,7 +53,8 @@
 <p>
   ThiefSnap sounds a loud alarm when your phone is moved, taken from your pocket, unplugged,
   or its headphones/Wi-Fi are changed while protection is on; it can capture a selfie of whoever
-  enters the wrong PIN; and it can ring on a clap or whistle to help you find a misplaced phone.
+  sets off the alarm (and on a wrong PIN), saved on your device; and it can ring on a clap or
+  whistle to help you find a misplaced phone.
   It is designed to protect the owner’s own device.
 </p>
 
@@ -63,7 +64,7 @@
 <ul>
   <li>Your disarm <strong>PIN</strong>, stored only as a salted hash — never in plain text, never transmitted.</li>
   <li>App <strong>settings</strong> (sensitivity, volume, enabled detectors, theme, language, chosen alarm sound).</li>
-  <li><strong>Intruder selfies</strong> and the intrusion history (time + trigger), stored in the app’s private storage.</li>
+  <li><strong>Intruder selfies</strong> and the intrusion history (time + trigger), stored in the app’s private storage — never uploaded.</li>
 </ul>
 <p>All of the above is removed when you uninstall the app.</p>
 
@@ -75,17 +76,7 @@
   stop it or after a short timeout.
 </p>
 
-<h3>3.3 Email alert (Pro, optional, off by default)</h3>
-<p>
-  If you upgrade to Pro, turn on the email alert, and enter your own email address, then when an
-  incorrect PIN is entered the app sends the intruder selfie and the time to a relay server we
-  operate, which forwards an email to <strong>the email address you entered</strong> using an email
-  provider (<strong>Resend</strong>). This data is sent <strong>only to your
-  own address</strong> — never to us for any other purpose, never to third parties, and it includes
-  <strong>no location and no audio</strong>. This feature is off unless you enable it.
-</p>
-
-<h3>3.4 Ads (Free version)</h3>
+<h3>3.3 Ads (Free version)</h3>
 <p>
   The free version shows banner ads via <strong>Google AdMob</strong>. AdMob may collect and use a
   device <strong>advertising identifier (AD_ID)</strong> and related data to serve and measure ads,
@@ -93,13 +84,13 @@
   in section 6.
 </p>
 
-<h3>3.5 Purchases</h3>
+<h3>3.4 Purchases</h3>
 <p>
   Pro is a one-time purchase processed by <strong>Google Play Billing</strong>. Google handles the
   payment and tells the app whether you own Pro. We do not receive your payment details.
 </p>
 
-<h3>3.6 What we do NOT collect</h3>
+<h3>3.5 What we do NOT collect</h3>
 <ul>
   <li>No user accounts and no personal profile.</li>
   <li>No location data.</li>
@@ -111,13 +102,13 @@
 <h2>4. Permissions and why</h2>
 <table>
   <tr><th>Permission</th><th>Why</th></tr>
-  <tr><td>Camera</td><td>Take the intruder selfie when a wrong PIN is entered (only if you enable it).</td></tr>
+  <tr><td>Camera</td><td>Take the intruder selfie when the alarm fires or a wrong PIN is entered (only if you enable it).</td></tr>
   <tr><td>Microphone (record audio)</td><td>Detect a clap/whistle for “Find my phone” — on-device, not recorded.</td></tr>
   <tr><td>Notifications</td><td>Show the ongoing “protecting” notification and the alarm notification.</td></tr>
-  <tr><td>Foreground service (+ microphone / special use)</td><td>Keep protection or the clap/whistle listener running while active.</td></tr>
+  <tr><td>Foreground service (+ camera / microphone / special use)</td><td>Keep protection running (and take the trigger-time selfie), or run the clap/whistle listener, while active.</td></tr>
   <tr><td>Vibrate</td><td>Vibrate during the alarm.</td></tr>
   <tr><td>Biometric / fingerprint</td><td>Let you disarm the alarm with biometrics (only if you enable it).</td></tr>
-  <tr><td>Internet, network state (auto-added by Ads/Billing)</td><td>Serve ads, talk to Google Play Billing, and (Pro) send the email alert.</td></tr>
+  <tr><td>Internet, network state (auto-added by Ads/Billing)</td><td>Serve ads and talk to Google Play Billing.</td></tr>
   <tr><td>Advertising ID (AD_ID)</td><td>Used by Google AdMob in the free version (see section 3.4).</td></tr>
 </table>
 
@@ -125,14 +116,13 @@
 <ul>
   <li><strong>On your device:</strong> PIN hash, settings, selfies, history (sections 3.1).</li>
   <li><strong>To Google:</strong> ads (AdMob) and purchase state (Play Billing).</li>
-  <li><strong>To our relay + email provider, only for the Pro email alert you enabled:</strong> the selfie, the time, and the email address you entered — forwarded to that same address.</li>
+  <li><strong>Nowhere else.</strong> Selfies and history never leave your device.</li>
 </ul>
 
 <h2>6. Third-party services</h2>
 <ul>
   <li>Google AdMob &amp; Google Play services — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
   <li>Google Play Billing — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-  <li>Email delivery provider <strong>Resend</strong> (Pro email alert only) — see <a href="https://resend.com/legal/privacy-policy">Resend’s privacy policy</a>.</li>
 </ul>
 
 <h2>7. Your rights</h2>
@@ -140,7 +130,6 @@
 <ul>
   <li><strong>Delete your data:</strong> uninstall the app — all on-device data is wiped.</li>
   <li><strong>Opt out of ads data:</strong> upgrade to Pro (removes ads), or reset/limit your Advertising ID in Android settings.</li>
-  <li><strong>Turn off the email alert</strong> anytime in the app.</li>
   <li>Contact us anytime at <a href="mailto:hieu.dtvt10@gmail.com">hieu.dtvt10@gmail.com</a>.</li>
 </ul>
 <h3>7.2 Vietnam (Decree 13/2023/ND-CP on Personal Data Protection)</h3>
@@ -152,7 +141,7 @@
 <h3>7.3 EU / EEA (GDPR)</h3>
 <p>
   You have the rights of access, rectification, erasure, restriction, objection, and portability.
-  Legal bases: performing the purchase contract (Pro), and your consent (ads, email alert). You may
+  Legal bases: performing the purchase contract (Pro), and your consent (ads). You may
   complain to your local Data Protection Authority.
 </p>
 <h3>7.4 California (CCPA/CPRA)</h3>
@@ -171,8 +160,7 @@
 <h2>9. Data retention &amp; security</h2>
 <p>
   On-device data lives only on your device until you delete it or uninstall. The PIN is stored as a
-  salted hash. Data sent for the Pro email alert is transmitted over HTTPS and is not retained by our
-  relay beyond delivering the email.
+  salted hash. Intruder selfies are stored only in the app’s private storage and are never uploaded.
 </p>
 
 <h2>10. Changes to this policy</h2>
